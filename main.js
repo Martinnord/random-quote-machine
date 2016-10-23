@@ -18,16 +18,23 @@ $(document).ready(function(){
         success: function(response) {
             var quote = response.quoteText;
             var author = response.quoteAuthor;
+            console.log(quote.length);
+
             $("#quote").text(quote);
             if (author) {
                 $("#author").text(" - " + author);
             } else {
                 $("#author").text(" - Secret");
             }
+            
+            if(quote.length > 120) {
+                $("#quote").css("font-size", "1.3em");
+            } else {
+                $(".typo").css("font-size", "1.5em")
+            }
         }    
     }); 
    }
-    
     $("#newQuoteBtn").on("click", function(){
         getNewQuote();
     });
@@ -38,6 +45,6 @@ $(document).ready(function(){
         
         $("#tweetThis").attr("href", "https://twitter.com/intent/tweet?text=" + text + author);
     });
-    
+        
     getNewQuote();
 });
