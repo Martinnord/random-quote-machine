@@ -1,0 +1,106 @@
+body {
+    background-image: url(assets/img/background.jpg);
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 5em;
+    letter-spacing: 2px;
+}
+
+.typo {
+    color: white;
+    font-size: 1.5em;
+    max-width: 600px;
+    font-family: 'Cantarell', sans-serif;
+
+}
+
+a {
+    font-family: 'Cantarell', sans-serif;
+    color: white;
+    transition:.5s;
+}
+
+.container {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.quotes {
+    border: 1px black;
+    border-radius: 20px;
+    padding: 10;
+    margin-bottom: 15px;
+}
+
+#little {
+    margin-top: 30px;
+    width: 300px;
+}
+
+.copyright {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 1em;
+}
+
+.link:hover {
+    color: #3F5765;
+    text-decoration: none;
+}
+
+.link:focus {
+    color: white;
+    text-decoration: none;
+}
+
+@media(max-width: 480px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media(max-width: 480px) {
+  .higher {
+    width: 300px;
+  }
+}
+
+
+#author {
+    padding-bottom: 10px;
+}
+
+.instagram {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: white;
+    padding: 0 0 30px 30px;
+    transition:.5s;
+}
+
+.instagram:hover {
+    color: #3F5765;
+}
+
+.twitter {
+    position: fixed;
+    left: 55px;
+    bottom: 0;
+    color: white;
+    padding: 0 0 30px 30px;
+    transition:.5s;
+}
+
+.twitter:hover {
+    color: #3F5765;
+}
+
+
+
+
+
+
