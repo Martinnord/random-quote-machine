@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Quotes</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/icon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.ico">
     <link href="https://fonts.googleapis.com/css?family=Cantarell|Fjalla+One" rel="stylesheet">
     <link rel="stylesheet" href="assets/font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/Animsition/animsition.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+  <div class="animsition">
+    <div class="container-fluid">
         <div class="row">
             <h1>Random Quotes</h1>
             <hr class="higher">
@@ -24,28 +25,32 @@
                     <br>
                     <p class="text-center center-block typo" id="author"></p>
                 </div>
+                <div class="quote-buttons">
                 <ul class="list-inline">
-                    <li><a id="newQuoteBtn" class="btn btn-success get-quote"><i class="fa fa-quote-right" aria-hidden="true"></i> New Quote</a></li>
+                    <li><a id="newQuoteBtn" class="btn btn-success get-quote"><i class="fa fa-quote-right" aria-hidden="true"></i>  New Quote</a></li>
                     <li><a id="tweetThis" class="btn btn-primary share-quote" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet This</a></li>
                 </ul>
+              </div>
             </div>
         </div>
         <hr id="little">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 text-center">
                 <a class="link" href="http://martinnord.me/" target="_blank">&copy; Martin Nordström 2016</a>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4">
-                <a href="https://www.instagram.com/martinnostyle/" target="_blank"><i class="fa fa-instagram fa-3x instagram" aria-hidden="true"></i></a>
-            </div>
-            <div class="col-md-4">
-               <a href="https://twitter.com/MartinDaSofo"><i class="fa fa-twitter fa-3x twitter" aria-hidden="true"></i></a>
+        <div class="row" id="social-row"> 
+            <div class="col-md-12">
+              <div class="social-icons">
+                <a href="https://www.instagram.com/martinnostyle/" target="_blank"><i class="fa fa-instagram fa-2x instagram" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/MartinDaSofo"><i class="fa fa-twitter fa-2x twitter" aria-hidden="true"></i></a>
+              </div>        
             </div>
         </div>
     </div>
+  </div>  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/Animsition/animsition.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

@@ -1,6 +1,8 @@
 body {
     background-image: url(assets/img/background.jpg);
     background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
 h1 {
@@ -8,6 +10,7 @@ h1 {
     font-family: 'Fjalla One', sans-serif;
     font-size: 5em;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .typo {
@@ -15,7 +18,6 @@ h1 {
     font-size: 1.5em;
     max-width: 600px;
     font-family: 'Cantarell', sans-serif;
-
 }
 
 a {
@@ -24,9 +26,9 @@ a {
     transition:.5s;
 }
 
-.container {
-    text-align: center;
+.container-fluid {
     padding-top: 30px;
+    height: 100vh !important;
 }
 
 .quotes {
@@ -44,7 +46,9 @@ a {
 .copyright {
     font-family: 'Cantarell', sans-serif;
     font-size: 1em;
+    text-align: center;
 }
+
 
 .link:hover {
     color: #3F5765;
@@ -62,6 +66,10 @@ a {
   }
 }
 
+.higher {
+    width: 500px;
+}
+
 @media(max-width: 480px) {
   .higher {
     width: 300px;
@@ -73,10 +81,14 @@ a {
     padding-bottom: 10px;
 }
 
+.social-icons {
+  text-align: left;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
 .instagram {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     color: white;
     padding: 0 0 30px 30px;
     transition:.5s;
@@ -87,9 +99,6 @@ a {
 }
 
 .twitter {
-    position: fixed;
-    left: 55px;
-    bottom: 0;
     color: white;
     padding: 0 0 30px 30px;
     transition:.5s;
@@ -99,8 +108,12 @@ a {
     color: #3F5765;
 }
 
+.quote-buttons {
+  text-align: center;
+}
 
-
-
-
+#social-row {
+    position: absolute;
+    bottom: 0;
+}
 

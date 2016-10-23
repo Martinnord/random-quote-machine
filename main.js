@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+  $(".animsition").animsition({
+    inClass: "fade-in",
+    outClass: "fade-out"
+  });
+  
    function getNewQuote() {
     $.ajax({
        url: 'http://api.forismatic.com/api/1.0/',
