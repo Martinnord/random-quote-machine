@@ -1,9 +1,22 @@
+/***********************************************
+STYLE FOR THE WHOLE SITE'S APPEARANCE
+***********************************************/
+
 body {
-    background-image: url(assets/img/background.jpg);
+    background-image: url("https://source.unsplash.com/category/nature/1920x1080");
     background-size: cover;
     width: 100%;
     height: 100%;
 }
+
+.container-fluid {
+    padding-top: 30px;
+    height: 100vh !important;
+}
+
+/***********************************************
+STYLE FOR THE TEXTS
+***********************************************/
 
 h1 {
     color: white;
@@ -11,6 +24,12 @@ h1 {
     font-size: 5em;
     letter-spacing: 2px;
     text-align: center;
+}
+
+@media(max-width: 480px) {
+  h1 {
+    font-size: 3em;
+  }
 }
 
 .typo {
@@ -26,21 +45,11 @@ a {
     transition:.5s;
 }
 
-.container-fluid {
-    padding-top: 30px;
-    height: 100vh !important;
-}
-
 .quotes {
     border: 1px black;
     border-radius: 20px;
     padding: 10;
     margin-bottom: 15px;
-}
-
-#little {
-    margin-top: 30px;
-    width: 300px;
 }
 
 .copyright {
@@ -49,21 +58,13 @@ a {
     text-align: center;
 }
 
+/***********************************************
+HR STYLING
+***********************************************/
 
-.link:hover {
-    color: #3F5765;
-    text-decoration: none;
-}
-
-.link:focus {
-    color: white;
-    text-decoration: none;
-}
-
-@media(max-width: 480px) {
-  h1 {
-    font-size: 3em;
-  }
+#little {
+    margin-top: 30px;
+    width: 300px;
 }
 
 .higher {
@@ -76,10 +77,23 @@ a {
   }
 }
 
+.link:hover {
+    color: #3F5765;
+    text-decoration: none;
+}
+
+.link:focus {
+    color: white;
+    text-decoration: none;
+}
 
 #author {
     padding-bottom: 10px;
 }
+
+/***********************************************
+STYLING FOR THE ICONS ON THE PAGE
+***********************************************/
 
 .social-icons {
   text-align: left;
@@ -116,4 +130,3 @@ a {
     position: absolute;
     bottom: 0;
 }
-

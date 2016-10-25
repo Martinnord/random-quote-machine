@@ -4,7 +4,7 @@ $(document).ready(function(){
     inClass: "fade-in",
     outClass: "fade-out"
   });
-  
+
    function getNewQuote() {
     $.ajax({
        url: 'http://api.forismatic.com/api/1.0/',
@@ -26,25 +26,30 @@ $(document).ready(function(){
             } else {
                 $("#author").text(" - Secret");
             }
-            
+
             if(quote.length > 120) {
                 $("#quote").css("font-size", "1.3em");
             } else {
                 $(".typo").css("font-size", "1.5em")
             }
-        }    
-    }); 
+        }
+    });
    }
     $("#newQuoteBtn").on("click", function(){
         getNewQuote();
     });
-    
+
+    $("#newQuoteBtn").on("click", function() {
+        console.log("Hello!");
+    });
+
+
     $("#tweetThis").on("click", function(){
         var text = $("#quote").text();
         var author = $("#author").text();
-        
+
         $("#tweetThis").attr("href", "https://twitter.com/intent/tweet?text=" + text + author);
     });
-        
+
     getNewQuote();
 });
