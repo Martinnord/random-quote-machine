@@ -24,6 +24,7 @@ h1 {
     font-size: 5em;
     letter-spacing: 2px;
     text-align: center;
+    text-shadow: 0.5px 0.5px 1px #333;
 }
 
 @media(max-width: 480px) {
@@ -34,6 +35,7 @@ h1 {
 
 .typo {
     color: white;
+    text-shadow: 0.5px 0.5px 1px #333;
     font-size: 1.5em;
     max-width: 600px;
     font-family: 'Cantarell', sans-serif;
@@ -58,17 +60,22 @@ a {
     text-align: center;
 }
 
+#martin {
+    text-shadow: 0.5px 0.5px 1px #333 !important;
+}
 /***********************************************
 HR STYLING
 ***********************************************/
 
 #little {
     margin-top: 30px;
-    width: 300px;
+    width: 300px !important;
+    border: solid 0.5px white !important;
 }
 
 .higher {
     width: 500px;
+    border: solid 0.5px white !important;
 }
 
 @media(max-width: 480px) {
@@ -78,7 +85,7 @@ HR STYLING
 }
 
 .link:hover {
-    color: #3F5765;
+    color: #333;
     text-decoration: none;
 }
 
@@ -109,7 +116,7 @@ STYLING FOR THE ICONS ON THE PAGE
 }
 
 .instagram:hover {
-    color: #3F5765;
+    color: #333;
 }
 
 .twitter {
@@ -119,7 +126,7 @@ STYLING FOR THE ICONS ON THE PAGE
 }
 
 .twitter:hover {
-    color: #3F5765;
+    color: #333;
 }
 
 .quote-buttons {
