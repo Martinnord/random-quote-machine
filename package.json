@@ -1,0 +1,25 @@
+{
+  "name": "random-quote-machine",
+  "version": "1.0.0",
+  "description": "A random wyote machine",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "node": "^0.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martinnord/random-quote-machine.git"
+  },
+  "author": "Martin Nordström",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Martinnord/random-quote-machine/issues"
+  },
+  "homepage": "https://github.com/Martinnord/random-quote-machine#readme"
+}
